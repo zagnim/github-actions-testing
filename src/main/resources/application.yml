@@ -1,0 +1,10 @@
+dtos:
+  first:
+    key: one
+    value: 1
+  second:
+    key: two
+    value: 2
+  third:
+    key: three
+    value: 3

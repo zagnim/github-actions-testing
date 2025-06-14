@@ -1,0 +1,10 @@
+dtos:
+  first:
+    key: ${KEY_ONE}
+    value: 1_prod
+  second:
+    key: two_prod
+    value: 2_prod
+  third:
+    key: three_prod
+    value: 3_prod

@@ -1,0 +1,10 @@
+dtos:
+  first:
+    key: one-test
+    value: 1-test
+  second:
+    key: two-test
+    value: 2-test
+  third:
+    key: three-test
+    value: 3-test
