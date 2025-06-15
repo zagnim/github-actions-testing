@@ -3,9 +3,9 @@ name: Build and Publish Image
 on:
   push:
     branches:
-      - '*'
-  tags:
-      - '*.*.*'
+      - 'main'
+    tags:
+      - v*.*.*
 
 env:
   REGISTRY: ghcr.io
