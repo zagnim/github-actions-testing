@@ -1,6 +1,6 @@
 dtos:
   first:
-    key: ${KEY_ONE}
+    key: one_prod
     value: 1_prod
   second:
     key: two_prod
