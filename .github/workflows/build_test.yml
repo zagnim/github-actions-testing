@@ -2,9 +2,8 @@ name: Build and Publish Test Image
 
 on:
   push:
-    branches:
-      branches-ignore:
-        - 'main'
+    branches-ignore:
+      - 'main'
 
 env:
   REGISTRY: ghcr.io
