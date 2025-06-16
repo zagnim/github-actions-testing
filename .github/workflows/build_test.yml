@@ -2,8 +2,10 @@ name: Build and Publish Test Image
 
 on:
   push:
-    branches-ignore:
-      - 'main'
+    branches:
+      - '**'
+    tags:
+      -v*.*.*
 
 env:
   REGISTRY: ghcr.io
@@ -56,10 +58,10 @@ jobs:
         with:
           images: '${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}'
           tags: |
-            type=ref,event=branch
-            type=ref,event=pr
-            type=semver,pattern={{version}}
-            type=semver,pattern={{major}}.{{minor}}
+            type=ref,event=branch,suffix=-test-image
+            type=ref,event=pr,suffix=-test-image
+            type=semver,pattern={{version}},suffix=-test-image
+            type=semver,pattern={{major}}.{{minor}},suffix=-test-image
 
       - name: Build and push
         uses: docker/build-push-action@v6
